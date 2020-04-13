@@ -8,6 +8,7 @@ var typed = new Typed('#typed', {
 })
 // END SCRIPT TYPED <h1> TEXT ANIMATION
 
+
 // SCRIPT TOGGLE
 const checkbox = document.querySelector('input[name=theme]');
 const currentTheme = localStorage.getItem('data-theme');
@@ -39,6 +40,7 @@ if (currentTheme) {
         }
 // END SCRIPT TOGGLE
 
+
 // SCRIPT BURGER
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -67,3 +69,46 @@ const navSlide = () => {
 navSlide();
 
 // END SCRIPT BURGER
+
+
+// SCRIPT COLOR BUTTONS
+const iChangeColors = () => {
+
+    // Sélectionnent les boutons switch (un par couleur) et activent setColor au clic
+    document.querySelector('.toGreen').addEventListener('click', () => {
+        setColor('#00FF0C')
+    });
+    document.querySelector('.toPink').addEventListener('click', () => {
+        setColor('#FB28FF')
+    });
+    document.querySelector('.toYellow').addEventListener('click', () => {
+        setColor('#fac51c')
+    });
+    document.querySelector('.toBlue').addEventListener('click', () => {
+        setColor('#28FFFB')
+    });
+
+    // Sélectionne et modifie la couleur de tous les background, textes et bordures
+    let setColor = (color) => {
+        document.querySelectorAll('.backgroundChange').forEach(function (elem) {
+            elem.style.backgroundColor = color;
+        });
+        document.querySelectorAll('.borderChange').forEach(function (elem) {
+            elem.style.borderColor = color;
+        });
+        document.querySelectorAll('.textChange').forEach(function (elem) {
+            elem.style.color = color;
+        });
+        document.querySelectorAll('.textHoveredChange').forEach(function (elem) {
+            elem.addEventListener('mouseover', function() {
+                this.style.color = color;
+            });
+            elem.addEventListener('mouseout', function() {
+                this.style.color = '';
+            });
+        })
+    };
+};
+
+iChangeColors();
+// END COLOR BUTTONS
