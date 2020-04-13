@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="fr" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <title>Contrast Agency</title>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
@@ -45,7 +46,7 @@
     </section>
 
     <!-- SECTION "TOGGLE BUTTON" -->
-    <section id="togglebutton">
+    <div id="togglebutton">
 
         <!-- Toggle Button -->
         <input type="checkbox" id="switch" name="theme"/>
@@ -56,7 +57,7 @@
         <button class="boutoncouleur toPink" id="pinkbutton"></button>
         <button class="boutoncouleur toYellow" id="yellowbutton"></button> 
         <button class="boutoncouleur toBlue" id="bluebutton" ></button>
-    </section>
+    </div>
 
     <!-- SECTION "L'AGENCE" -->
     <section id="agence">
@@ -68,7 +69,7 @@
     <!-- SECTION FORMULAIRE -->
     <aside id="formulaire">
 
-        <form action="">
+        <form action="POST">
             <h3 class="borderChange">Nous contacter</h3>
             <label for="name"></label>
             <input type="text" id="name" name="user_name" placeholder="Prénom" required>
@@ -106,7 +107,7 @@
         
         <!-- BOX SYLVIE -->
         <div class="box"> <!-- Partie photo -->
-            <img src="/assets/images/sylvie.jpg" alt="Une photo de Sylvie">
+            <img src="/assets/images/sylvie.jpg" alt="">
         </div>
 
         <div class="box texte"> <!-- Partie texte -->
@@ -141,14 +142,14 @@
                 </div>
             </div>
             <div class="box"> <!-- Partie photo -->
-                <img src="/assets/images/arthur.jpg" alt="Une photo d'Arthur">
+                <img src="/assets/images/arthur.jpg" alt="">
             </div>
         </div>
 
 
         <!-- BOX LUCAS -->
         <div class="box"> <!-- Partie photo -->
-            <img src="/assets/images/lucas.jpg" alt="Une photo de Lucas">
+            <img src="/assets/images/lucas.jpg" alt="">
         </div>
 
         <div class="box texte"> <!-- Partie texte -->
@@ -183,7 +184,7 @@
                 </div>
             </div>
             <div class="box"> <!-- Partie photo -->
-                <img src="/assets/images/leo.jpg" alt="Une photo de Léonardo">
+                <img src="/assets/images/leo.jpg" alt="">
             </div>
         </div>
     </section>
@@ -193,9 +194,9 @@
         <div id="texte_footer_left">
             <p>21 rue de la Vanne<br>92120 Montrouge<br>Tel: 01 44 43 11 00</p>
         </div>
-        <div id="ArrowBox backgroundChange">
+        <div class="ArrowBox backgroundChange">
             <a href="#homepage">
-                <div id="ArrowTop backgroundChange"></div>
+                <div class="ArrowTop backgroundChange"></div>
             </a>
         </div>
         <div id="texte_footer_right">

@@ -72,6 +72,7 @@ navSlide();
 
 
 // SCRIPT COLOR BUTTONS
+
 const iChangeColors = () => {
 
     // Sélectionnent les boutons switch (un par couleur) et activent setColor au clic
@@ -111,4 +112,5 @@ const iChangeColors = () => {
 };
 
 iChangeColors();
+
 // END COLOR BUTTONS
